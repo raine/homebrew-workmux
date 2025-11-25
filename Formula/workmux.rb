@@ -1,22 +1,22 @@
 class Workmux < Formula
   desc "Opinionated workflow tool that orchestrates git worktrees and tmux"
   homepage "https://github.com/raine/workmux"
-  version "0.1.27-test"
+  version "0.1.27"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/workmux/releases/download/v0.1.27-test/aarch64-apple-darwin.tar.gz"
-      sha256 "912db745f17869e5aa3ad30c1014d8a95663c8a60d9e3bb1de294a876a2199c6"
+      url "https://github.com/raine/workmux/releases/download/v0.1.27/aarch64-apple-darwin.tar.gz"
+      sha256 "b319afbe2f111b5eb43a42038a2106a5522f05bb2ec7c752ac4991888b85a6d2"
     else
-      url "https://github.com/raine/workmux/releases/download/v0.1.27-test/x86_64-apple-darwin.tar.gz"
-      sha256 "80d0eef462a1b5fcdc45e6ee0b0d354eca57c2df2f4ebf279a3f7b7f372d9a0e"
+      url "https://github.com/raine/workmux/releases/download/v0.1.27/x86_64-apple-darwin.tar.gz"
+      sha256 "7cc1e23c562f4436a610480fa4c325180c468c9742386b5c05cb81493cf0294e"
     end
   end
 
   on_linux do
-    url "https://github.com/raine/workmux/releases/download/v0.1.27-test/x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "cafb419732003a2edcc559483ab581f47766cf1866e847a96300c93b433c5757"
+    url "https://github.com/raine/workmux/releases/download/v0.1.27/x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "40c7ae3a6590cc9d93855d3137d10b1afa9b4d2cbbe13cfc6b803b6ea732767a"
   end
 
   def install

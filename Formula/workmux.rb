@@ -27,10 +27,13 @@ class Workmux < Formula
   def install
     bin.install "workmux"
 
-    generate_completions_from_executable(bin/"workmux", "completions bash", shells: [:bash])
-    generate_completions_from_executable(bin/"workmux", "completions fish", shells: [:fish])
-    generate_completions_from_executable(bin/"workmux", "completions zsh", shells: [:zsh])
+    generate_completions_from_executable(bin/"workmux", "completions", shells: [:bash, :fish, :zsh])
   end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/workmux --version")
+  end
+end
 
   test do
     assert_match version.to_s, shell_output("\#{bin}/workmux --version")

@@ -7,20 +7,20 @@ class Workmux < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/raine/workmux/releases/download/v0.1.217/workmux-darwin-arm64.tar.gz"
-      sha256 "e5907ed57c821a338072737016701c6f3cd8ab65aac5e5c6b32bd15170e87483"
+      sha256 "6c10cbe74adc3b230a011d60ffb9eeb191bb1826192b0d6d7ef9d6c98a263e58"
     else
       url "https://github.com/raine/workmux/releases/download/v0.1.217/workmux-darwin-amd64.tar.gz"
-      sha256 "3a18e47b20094ec3f0da235196a59cdb683d9b22c726942be9cad296b736720b"
+      sha256 "9bc40ba4174f5f65e463965b9f27e7d2c6aa6bd8e6870807f03ef0372444edf9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/raine/workmux/releases/download/v0.1.217/workmux-linux-arm64.tar.gz"
-      sha256 "de25d30d38cd7891bb493cd3a8dca0d43207ed5c52b7dceb48e57ca4b02f8b44"
+      sha256 "6a2fba7f3692d90d8886cef7e3ea1be447edd6bb64ace39ee00645d834612c24"
     else
       url "https://github.com/raine/workmux/releases/download/v0.1.217/workmux-linux-amd64.tar.gz"
-      sha256 "cccafec3ecba4e93fd3e4050da8db084b0980500ce3974a8f293ce17575eb908"
+      sha256 "06e1997aebe11e6f034e5e5bf9b2b5999c1c4eccfaa0c754de5aab09ffd050c1"
     end
   end
 

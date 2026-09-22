@@ -1,26 +1,26 @@
 class Workmux < Formula
   desc "Opinionated workflow tool that orchestrates git worktrees and tmux"
   homepage "https://github.com/raine/workmux"
-  version "0.1.264"
+  version "0.1.265"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/workmux/releases/download/v0.1.264/workmux-darwin-arm64.tar.gz"
-      sha256 "9182ac22732ff8198704b82ac26ab92965b94214c8f91fdeca21c36f71f00ee9"
+      url "https://github.com/raine/workmux/releases/download/v0.1.265/workmux-darwin-arm64.tar.gz"
+      sha256 "b2f83de4e5256f92e89cbd77d845fa8bb185100945f32329711edea8ef297687"
     else
-      url "https://github.com/raine/workmux/releases/download/v0.1.264/workmux-darwin-amd64.tar.gz"
-      sha256 "96e7925ac12037e546d82fabf5bf5de5879db6086bc3a08ace3f98da7f84b123"
+      url "https://github.com/raine/workmux/releases/download/v0.1.265/workmux-darwin-amd64.tar.gz"
+      sha256 "0d4b261396bf4bc2476638946653e8ec26d1c6166d83f0b501e8ad7f1c93d71c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/workmux/releases/download/v0.1.264/workmux-linux-arm64.tar.gz"
-      sha256 "06c309211a2247f3b15b8b285f112b472c99a7fcbce25042e8756467880e3330"
+      url "https://github.com/raine/workmux/releases/download/v0.1.265/workmux-linux-arm64.tar.gz"
+      sha256 "c8e69692e6a720daa8c5dca72400b846b0d690ded1a99459d30bf3b9e2760242"
     else
-      url "https://github.com/raine/workmux/releases/download/v0.1.264/workmux-linux-amd64.tar.gz"
-      sha256 "a3d173c5f44d886fa6b3815dbdb6ce653e659db376fe48fa93db71bf40d11655"
+      url "https://github.com/raine/workmux/releases/download/v0.1.265/workmux-linux-amd64.tar.gz"
+      sha256 "c9ac9402eee0f227814eb0d772ca74936966ad0a56846479bc54f121421ba49f"
     end
   end
 
